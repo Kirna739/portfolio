@@ -50,6 +50,14 @@ nav ul li a:hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Center section headings */
+.container h2 {
+  text-align: center;
+  color: #00bfff;
+  margin-bottom: 1rem;
+}
+
+
 section {
   margin-top: 2rem;
 }
@@ -117,7 +125,9 @@ section {
   color: white;
 }
 
-/* Projects */
+
+
+/* project */
 .project {
   background-color: #1a1a1a;
   padding: 1rem;
@@ -132,6 +142,16 @@ section {
   background-color: #222;
 }
 
+#projectid{
+     width: 40%;
+
+}
+
+.divv1{
+  display: flex;
+  justify-content: space-around;
+}
+
 /* Footer */
 footer {
   text-align: center;
@@ -144,6 +164,12 @@ footer {
 /* Icons */
 i {
   margin-right: 0.5rem;
-  color: #00bfff;
+  color: #00bfff; /* Changed from 'blue' to theme color */
 }
+
+i:hover {
+  color: #009acd; /* Slightly darker variation for hover effect */
+}
+
+
 
