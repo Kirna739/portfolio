@@ -137,8 +137,13 @@ section {
   color: white;
 }
 
+#education h3{
+  color: #00bfff;
+}
 
-
+#projectid h3{
+  color: #00bfff ;
+}
 /* project */
 .project {
   background-color: #1a1a1a;
@@ -183,7 +188,7 @@ footer {
 /* Icons */
 i {
   margin-right: 0.5rem;
-  color: #00bfff; /* Changed from 'blue' to theme color */
+  color: #026d91; /* Changed from 'blue' to theme color */
 }
 
 i:hover {
