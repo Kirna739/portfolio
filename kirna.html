@@ -4,29 +4,31 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Python Developer Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <!-- Navigation Bar -->
   <nav>
-    <ul>
-      <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
-      <li><a href="#about"><i class="fa-solid fa-circle-info"></i> About</a></li>
-      <li><a href="#skills"><i class="fa-solid fa-code"></i> Skills</a></li>
-      <li><a href="#projects"><i class="fa-solid fa-laptop-code"></i> Projects</a></li>
-      <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
-    </ul>
+    <div class="nav-container">
+      <button class="hamburger" id="hamburger">
+        <i class="fa fa-bars"></i>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="#about"><i class="fa-solid fa-circle-info"></i> About</a></li>
+        <li><a href="#skills"><i class="fa-solid fa-code"></i> Skills</a></li>
+        <li><a href="#projects"><i class="fa-solid fa-laptop-code"></i> Projects</a></li>
+        <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+      </ul>
+    </div>
   </nav>
 
-  <!-- Home Section -->
-<section id="home" class="container home-section">
-  <img src="photo1.jpg" alt="Profile Photo" class="profile-photo" />
-  <h1><i class="fa-solid fa-user"></i> Hi, I'm Kirna</h1>
-  <p>Python Developer | ML Enthusiast | Problem Solver</p>
-</section>
+  <section id="home" class="container home-section">
+    <img src="photo1.jpg" alt="Profile Photo" class="profile-photo" />
+    <h1><i class="fa-solid fa-user"></i> Hi, I'm Kirna</h1>
+    <p>Python Developer | ML Enthusiast | Problem Solver</p>
+  </section>
 
-  <!-- About Section -->
   <section id="about" class="container hover-section">
     <h2><i class="fa-solid fa-circle-info"></i> About Me</h2>
     <p>
@@ -34,20 +36,17 @@
     </p>
   </section>
 
-  <!-- Technical Skills Section -->
-<section id="skills" class="container hover-section">
-  <h2><i class="fa-solid fa-code"></i> Technical Skills</h2>
-  <ul class="skills-list">
-    <li><i class="fa-brands fa-python"></i> Python</li>
-    <li><i class="fa-solid fa-server"></i> HTML,CSS,Javascript</li>
-    <li><i class="fa-solid fa-database"></i> Streamlit</li>
-    <li><i class="fa-solid fa-table"></i> SQL / SQLite</li>
-    <li><i class="fa-solid fa-wifi"></i> Data Analytics</li>
-  </ul>
-</section>
+  <section id="skills" class="container hover-section">
+    <h2><i class="fa-solid fa-code"></i> Technical Skills</h2>
+    <ul class="skills-list">
+      <li><i class="fa-brands fa-python"></i> Python</li>
+      <li><i class="fa-solid fa-server"></i> HTML, CSS, JavaScript</li>
+      <li><i class="fa-solid fa-database"></i> Streamlit</li>
+      <li><i class="fa-solid fa-table"></i> SQL / SQLite</li>
+      <li><i class="fa-solid fa-wifi"></i> Data Analytics</li>
+    </ul>
+  </section>
 
-
-    <!-- Soft Skills Section -->
   <section id="soft-skills" class="container hover-section">
     <h2><i class="fa-solid fa-people-group"></i> Soft Skills</h2>
     <ul class="skills-list">
@@ -57,8 +56,6 @@
     </ul>
   </section>
 
-  
-  <!-- Education Section -->
   <section id="education" class="container hover-section">
     <h2><i class="fa-solid fa-graduation-cap"></i> Education</h2>
     <div class="project">
@@ -71,49 +68,73 @@
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <!-- Projects Section -->
-<section id="projects" class="container hover-section">
-  <h2><i class="fa-solid fa-laptop-code"></i> Projects</h2>
-  <div class="divv1">
+  <section id="projects" class="container hover-section">
+    <h2><i class="fa-solid fa-laptop-code"></i> Projects</h2>
+    <div class="divv1">
+      <div class="project project-box">
+        <h3>
+          <i class="fa-solid fa-heart-pulse"></i>
+          <a href="https://medical-diagnosis-ai-model.streamlit.app/" target="_blank">Disease Predictor</a>
+        </h3>
+        <p>This web app predicts possible diseases based on symptoms you select or describe in your own words, using AI and machine learning for fast, accurate results.</p>
+      </div>
 
-    <div id="projectid" class="project">
-      <h3>
-        <i class="fa-solid fa-heart-pulse"></i>
-        <a href="https://medical-diagnosis-ai-model.streamlit.app/" target="_blank" style="color: inherit; text-decoration: none;">
-          Disease Predictor
-        </a>
-      </h3>
-      <p>This web app predicts possible diseases based on symptoms you select or describe in your own words, using AI and machine learning for fast, accurate results.</p>
+      <div class="project project-box">
+        <h3>
+          <i class="fa-solid fa-wallet"></i>
+          <a href="https://github.com/Kirna739/expense-tracker" target="_blank">Expense Tracker</a>
+        </h3>
+        <p>A simple desktop app built with Tkinter and SQLite to add, view, filter, and delete daily expenses with weekly/monthly summaries.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="container hover-section">
+  <h2><i class="fa-solid fa-phone"></i> Contact Me</h2>
+  <div class="contact-boxes">
+
+    <div class="contact-box">
+      <p><i class="fa-solid fa-envelope"></i>Email:</p>
+      <p>kiranjalap403@gmail.com</p>
     </div>
 
-    <div id="projectid" class="project">
-      <h3>
-        <i class="fa-solid fa-wallet"></i>
-        <a href="https://github.com/Kirna739/expense-tracker" target="_blank" style="color: inherit; text-decoration: none;">
-          Expense Tracker
-        </a>
-      </h3>
-      <p>A simple desktop app built with Tkinter and SQLite to add, view, filter, and delete daily expenses with weekly/monthly summaries.</p>
+    <div class="contact-box">
+      <p><i class="fa-brands fa-github"></i>GitHub:</p>
+      <p><a href="https://github.com/Kirna739" target="_blank">Kirna739</a></p>
+    </div>
+
+    <div class="contact-box">
+      <p><i class="fa-brands fa-linkedin"></i>LinkedIn:</p>
+      <p><a href="https://www.linkedin.com/in/kirna-jalap-327a07331/" target="_blank">linkedin.com/in/kirna-jalap</a></p>
     </div>
 
   </div>
 </section>
 
-
-  <!-- Contact Section -->
-  <section id="contact" class="container hover-section">
-    <h2><i class="fa-solid fa-phone"></i> Contact Me</h2>
-    <p><i class="fa-solid fa-envelope"></i> Email: kiranjalap403@gmail.com</p>
-    <p><i class="fa-brands fa-github"></i> GitHub: <a href="https://github.com/Kirna739" target="_blank">Kirna739</a></p>
-    <p><i class="fa-brands fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/kirna-jalap-327a07331/" target="_blank">linkedin.com/in/Kiran jalap</a></p>
-    
-  </section>
-
-  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Kirna. All rights reserved.</p>
   </footer>
+
+  <script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+  const navItems = document.querySelectorAll('#nav-links a');
+
+  // Toggle menu when hamburger is clicked
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+
+  // Hide menu when a nav link is clicked (on mobile)
+  navItems.forEach(link => {
+    link.addEventListener('click', () => {
+      if (window.innerWidth <= 768) {
+        navLinks.classList.remove('show');
+      }
+    });
+  });
+</script>
+
 </body>
 </html>
 
